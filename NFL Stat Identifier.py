@@ -23,3 +23,6 @@ class NFLPassingStats(NFLStats):
 class NFLReceivingStats(NFLStats):
     def keys(): 
         return [ 'id', 'player_id', 'name', "side", 'twoptm', 'rec', 'yds', 'lngtd', 'tds', 'lng', 'twopta']
+class NFLRushingStats(NFLStats):
+    def keys(): 
+        return ['id', 'player_id', 'name', "side", 'lngtd', 'twoptm', 'yds', 'att', 'tds', 'lng', 'twopta']
